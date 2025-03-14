@@ -1,0 +1,19 @@
+%option noyywrap
+%{
+	#include<stdio.h>
+	#define CORREO_INSTITUCIONAL 1
+%}
+
+%%
+[a-z]{2}[0-9]{6}@uaeh\.edu\.mx {return CORREO_INSTITUCIONAL;}
+%%
+int main()
+{
+int token;
+while(1){
+token=yylex();
+if(token == CORREO_INSTITUCIONAL)
+printf("correo institucional reconocida\n");
+}
+	return 0;
+}

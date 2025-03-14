@@ -1,0 +1,19 @@
+%option noyywrap
+%{
+	#include<stdio.h>
+	#define RFC 1
+%}
+
+%%
+[a-z]{4}[0-9]{6}[A-Z0-9]{3} {return RFC;}
+%%
+int main()
+{
+int token;
+while(1){
+token=yylex();
+if(token == RFC)
+printf("RFC reconocida\n");
+}
+	return 0;
+}
