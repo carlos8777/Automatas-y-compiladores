@@ -17,7 +17,7 @@
 	int tully = 0;
 	int greyjoy = 0;
 	int lannister = 0;
-	int tyrrel = 0;
+	int tyrell = 0;
 	int martell = 0;
 	int baratheon = 0;
 	int targaryen = 0;
@@ -30,8 +30,14 @@
 	void funcionLugares(const char* texto, int var){
 		printf("\nSe contaron %d del lugar %s\n" ,var,texto);
 	}
+	void funcionCasas(const char* texto, int var){
+		printf("\nSe contaron %d de las casas %s\n" ,var,texto);
+	}
+	void funcionPersonajes(const char* texto, int var){
+		printf("\nSe contaron %d personajes de la casa %s\n" ,var,texto);
+	}
 %}
-A [Aa¡·]
+A [Aa√Å√°]
 B [Bb]
 C [Cc]
 D [Dd]
@@ -39,13 +45,13 @@ E [Ee]
 F [Ff]
 G [Gg]
 H [Hh]
-I [IiÕÌ]
+I [Ii√ç√≠]
 J [Jj]
 K [Kk]
 L [Ll]
 M [Mm]
 N [Nn]
-O [Oo”Û]
+O [Oo√ì√≥]
 P [Pp]
 Q [Qq]
 R [Rr]
@@ -80,7 +86,26 @@ ESPACIO [" "]
 {S}{T}{A}{R}{K} {stark++; }
 {A}{R}{R}{Y}{N} {arryn++; }
 {T}{U}{L}{L}{Y} {tully++; }
-
+{G}{R}{E}{Y}{J}{O}{Y} {greyjoy++; }
+{L}{A}{N}{N}{I}{S}{T}{E}{R} {lannister++; }
+[T][Y][R][E][L][L] {tyrell++; }
+{M}{A}{R}{T}{E}{L}{L} {martell++; }
+{B}{A}{R}{A}{T}{H}{E}{O}{N} {baratheon++; }
+{T}{A}{R}{G}{A}{R}{Y}{E}{N} {targaryen++; }
+{E}{D}{D}{A}{R}{D} {casa_stark += yyleng; }
+{C}{A}{T}{E}{L}{Y}{N} {casa_stark += yyleng; }
+{A}{R}{Y}{A} {casa_stark += yyleng; }
+{S}{A}{N}{S}{A} {casa_stark += yyleng; }
+{R}{O}{B}{E}{R}{T} {casa_baratheon += yyleng; }
+{J}{O}{F}{F}{R}{E}{Y} {casa_baratheon += yyleng; }
+{S}{T}{A}{N}{N}{I}{S} {casa_baratheon += yyleng; }
+{A}{E}{G}{O}{N} {casa_targaryen += yyleng; }
+{D}{A}{E}{N}{E}{R}{Y}{S} {casa_targaryen += yyleng; }
+{A}{E}{R}{Y}{S} {casa_targaryen += yyleng; }
+{T}{Y}{W}{I}{N} {casa_lannister += yyleng; }
+{J}{A}{I}{M}{E} {casa_lannister += yyleng; }
+{T}{Y}{R}{I}{O}{N} {casa_lannister += yyleng; }
+{C}{E}{R}{S}{E}{I} {casa_lannister += yyleng; }
 . {}
 
 %%
@@ -97,17 +122,31 @@ int main(int argc, char *argv[]) {
     }
 
     yyin = file;
-    yylex();  // Llama al analizador lÈxico
+    yylex();  // Llama al analizador l√©xico
     fclose(file);
     funcionLugares("Westeros", westeros);
     funcionLugares("Invernalia", invernalia);
     funcionLugares("Desembarco del rey", desembarco);
     funcionLugares("Nido del aguilas", nidodeaguilas);
-    funcionLugares("AltojardÌn", altojardin);
+    funcionLugares("Altojard√≠n", altojardin);
     funcionLugares("Aguasdulces", aguasdulces);
     funcionLugares("Rocadragon", rocadragon);
     funcionLugares("Roca Casterly", rocacasterly);
     funcionLugares("Bastion de tormentas", bastiondetormentas);
     funcionLugares("Dorne", dorne);
+    funcionCasas("Stark", stark);
+    funcionCasas("Arryn", arryn);
+    funcionCasas("Tully", tully);
+    funcionCasas("Greyjoy", greyjoy);
+    funcionCasas("Lannister", lannister);
+    funcionCasas("Tyrell", tyrell);
+    funcionCasas("Martell", martell);
+    funcionCasas("Baratheon", baratheon);
+    funcionCasas("Targaryen", targaryen);
+    funcionPersonajes("Stark", casa_stark);
+    funcionPersonajes("Baratheon", casa_baratheon);
+    funcionPersonajes("Targaryen", casa_targaryen);
+    funcionPersonajes("Lannister", casa_lannister);
+
 	return 0;
 }
