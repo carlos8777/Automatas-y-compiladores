@@ -1,0 +1,138 @@
+line: 1 
+ columns: serial name salary age license 
+ tables: employees salaries
+line: 2 
+ columns: ALL 
+ tables: table1
+line: 3 
+ columns: name surname VATtaxes 
+ tables: taxes family
+line: 4 
+ columns: ALL 
+ tables: table1 table2 table3 table4
+line: 5 
+ columns: col1 col2 
+ tables: tab1
+line: 9 
+ columns: name surname gender fiscalcode 
+ tables: taxes family
+line: 1 
+ columns: ALL 
+ tables: table1
+line: 1 
+ columns: ALL 
+ tables: table1 table2 table3 table4
+line: 2 
+ columns: ALL 
+ tables: table1 table2 table3 table4
+line: 3 
+ columns: serial name salary age license 
+ tables: employees salaries
+line: 1 
+ columns: ALL 
+ tables: table1
+line: 2 
+ columns: col1 col2 
+ tables: tab1
+line: 1 
+ columns: ALL 
+ tables: table1 table2 table3 table4
+line: 1 
+ columns: col1 col2 
+ tables: tab1
+line: 3 
+ columns: col1 col2 
+ tables: tab1
+line: 6 
+ columns: name surname gender fiscalcode 
+ tables: taxes family
+line: 7 
+ columns: col1 col2 
+ tables: tab1
+line: 8 
+ columns: col1 col2 
+ tables: tab1
+line: 1 
+ columns: col1 col2 
+ tables: tab1
+line: 1 
+ columns: col1 col2 
+ tables: tab1
+line: 1 
+ columns: col1 col2 
+ tables: tab1
+line: 2 
+ columns: col1 col2 
+ tables: tab1
+line: 1 
+ columns: col1 col2 
+ tables: tab1
+line: 1 
+ columns: col1 col2 
+ tables: tab1
+line: 2 
+ columns: col1 col2 
+ tables: tab1
+line: 3 
+ columns: col1 col2 
+ tables: tab1
+line: 4 
+ columns: col1 col2 
+ tables: tab1
+line: 5 
+ columns: col1 col2 
+ tables: tab1
+line: 1 
+ columns: col1 col2 
+ tables: tab1
+line: 1 
+ columns: nombre edad 
+ tables: usuarios
+line: 1 
+ columns: col1 col2 
+ tables: tab1
+line: 1 
+ columns: nombre apellido 
+ tables: empleados
+line: 1 
+ columns: nombre edad 
+ tables: empleados
+line: 1 
+ columns: col1 col2 
+ tables: tab1
+line: 1 
+ columns: col1 col2 
+ tables: tab1
+line: 11362832 
+ columns: DELETE 
+ tables: usuarios
+line: 1974584 
+ columns: DELETE 
+ tables: usuarios
+line: 1 
+ columns: col1 
+ tables: tab1
+line: 2 
+ columns: col1 
+ tables: tab1
+line: 11707032 
+ columns: DELETE 
+ tables: caca
+line: 1728984 
+ columns: INSERT 
+ tables: pene
+line: 1733272 
+ columns: DELETE 
+ tables: tabla
+line: 7889368 
+ columns: INSERT 
+ tables: cliente
+line: 4 
+ columns: col1 
+ tables: tab1
+line: 1 
+ columns: col1 col2 
+ tables: tab1
+line: 1 
+ columns: col1 
+ tables: tab1
