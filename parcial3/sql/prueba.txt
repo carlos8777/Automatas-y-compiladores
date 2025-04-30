@@ -1,0 +1,13 @@
+correctas
+
+select * from usuarios where id = 1;
+select nombre from usuarios where id = 1;
+insert into usuario(id, nombre) values(1,christian);
+delete from nombre;
+
+incorrectas
+
+select
+insert into (from) carros;
+drop table
+select nombre, usuario
